@@ -6,16 +6,26 @@ namespace Problems
     {
         static void Main(string[] args)
         {
-            prefix("hello");
-            prefix("");
-            prefix("what   ...  did you say??  ");  
+            Console.WriteLine(prefix("hello"));
+            Console.WriteLine(prefix(""));
+            Console.WriteLine(prefix("what   ...  did you say??  "));  
+            Console.WriteLine(prefix(null));
         }
 
-        static void prefix(string input)
+        static public string prefix(string input)
         {
             int charz;
             int words = 0;
 
+            //fringe cases
+            if(input == "")
+            {
+                return "0,0:";
+            }
+            if(input == null)
+            {
+                return null;
+            }
             //count char length
             charz = input.Length;
 
@@ -38,19 +48,10 @@ namespace Problems
                 }
             }
 
-            //fringe cases
-            if(input == "")
-            {
-                Console.WriteLine("0,0");
-            }
-            else if(input == null)
-            {
-                Console.WriteLine("null");
-            }
-            else
-            {
-                Console.WriteLine(charz + "," + words + ":" + input);
-            }
+            
+        
+            return charz + "," + words + ":" + input;
+            
             
         }
     }
