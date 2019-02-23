@@ -1,6 +1,9 @@
 language: csharp
 solution: MyStuff.sln
 
+script: 
+      - dotnet restore
+      
 matrix:
       include:
       - os: linux
@@ -8,6 +11,5 @@ matrix:
       - os: linux
        dist: trusty
        mono: none
-      dotnent: 2.2
-      script: 
-      - dotnet restore
+      dotnent: 2.2.104
+      
