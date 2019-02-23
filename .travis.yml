@@ -6,6 +6,8 @@ os: linux
 
 mono: 5.18.0
 
+dotnent: 2.2
+
 script:
   - msbuild /p:Configuration=Release solution-name.sln
   - mono ./packages/xunit.runners.*/tools/xunit.console.clr4.exe ./MyProject.Tests/bin/Release/MyProject.Tests.dll
