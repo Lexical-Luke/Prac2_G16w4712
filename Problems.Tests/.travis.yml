@@ -1,7 +1,0 @@
-language: csharp
-solution: MyStuff.sln
-mono: none
-dist: 
-  -xenial
-  -trusty
-dotnent: 2.2
