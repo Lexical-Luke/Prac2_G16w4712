@@ -1,7 +1,13 @@
 language: csharp
 dotnent: 2.2
+
+install:
+  - dotnet restore
+
 script:
- dotnet test Problems.Tests
+ - dotnet build
+ - dotnet test Problems.Tests
+
 matrix:
  include:
   - dist: xenial
