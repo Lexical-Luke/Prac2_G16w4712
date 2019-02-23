@@ -8,7 +8,7 @@ namespace Problems
         {
             Console.WriteLine(prefix("hello"));
             Console.WriteLine(prefix(""));
-            Console.WriteLine(prefix("what   ...  did you say??  "));  
+            Console.WriteLine(prefix("what   ...  did you say??  "));
             Console.WriteLine(prefix(null));
         }
 
