@@ -1,11 +1,7 @@
 language: csharp
-dotnent: 2.2
-
-install:
-  - dotnet restore
+dotnet: 2.2
 
 script:
- - dotnet build
  - dotnet test Problems.Tests
 
 matrix:
